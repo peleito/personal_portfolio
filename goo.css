@@ -1,0 +1,288 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    max-width: 900px;
+    /* width: 100%; */
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    /* color: #5d110e; */
+    color: #2977c0;
+    margin: 10px 0;
+}
+
+.content p strong {
+    font-size: 1.5em;
+}
+
+p {
+    color: #070707;
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+a {
+    text-decoration: underline;
+    color: #2977c0;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+    /* border-radius: 50%; */
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+/* .name-and-description {
+    text-align: center;
+} */
+
+.name-and-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center content horizontally within white space */
+  justify-content: center;   /* Center content vertically if needed */
+  text-align: center;
+}
+
+.name-and-description h1 {
+    font-size: 1.8em;
+    /* margin: 10; */
+    margin: 0 0 0.4em 0;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #383838;
+    margin-top: 0.5em;
+    /* margin-top: 5px; */
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;         /* Center links horizontally */
+    gap: 15px;                       /* Space between links */
+    margin-top: 20px;                 /* Add space above the links */
+}
+
+.links a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.links img {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+}
+
+/* News Section */
+.news-section {
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.news-section ul {
+    max-width: 1000px;
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.news-section a {
+    word-wrap: break-word;
+}
+
+.news-list {
+    padding: 5;
+    margin: 0 auto;
+    list-style-position: inside;
+    max-width: 1000px; /* Match width with other sections */
+}
+
+.news-section ul li {
+    margin-bottom: 12px; /* Adjust this value as needed */
+}
+
+/* Publications table */
+
+.publications table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table if there’s extra space */
+}
+
+.publications td {
+    padding: 12px 10px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.publications img {
+    width: auto;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 0;
+}
+
+.publications td strong {
+    font-size: 1.2em;
+}
+
+.publications td em {
+    font-size: 0.85em;
+    color: #555;
+}
+
+.publications td .authors {
+    font-size: 0.9em;
+}
+
+.publications td .authors u {
+    text-decoration: underline;
+}
+
+.publications td:nth-child(2) {
+    max-width: 900px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Publication Tags */
+.pub-tag {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-left: 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.conference {
+    background-color: #3498db;
+}
+
+.journal {
+    background-color: #27ae60;
+}
+
+.preprint {
+    background-color: #f39c12;
+}
+
+.technical-report {
+    background-color: #8e44ad;
+}
+
+.workshop {
+    background-color: #d486a7;
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;             /* Use Flexbox for row layout */
+    justify-content: center;   /* Center align links horizontally */
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;         /* Space between links */
+}
+
+.nav a:hover {
+    color: #007bff;             /* Blue hover effect */
+}
+
+/* Optional: Adding space below the navigation bar */
+body {
+    padding-top: 60px;           /* Prevent content from hiding behind the nav bar */
+}
+
+
+.section-divider {
+    width: 100%;
+    max-width: 900px;
+    border: none;
+    height: 1px;
+    background-color: #000000; /* Light grey line */
+    margin: 40px 0; /* Adjust spacing */
+}
+
+.sub-section-divider {
+    width: 100%;
+    max-width: 900px;
+    border: none;
+    height: 1px;
+    background-color: #030000; /* Light grey line */
+    margin: 10px 0; /* Adjust spacing */
+}
+
+.publications iframe {
+    width: 100%;
+    height: 900px;
+    border-radius: 10px;
+    margin-top: 10px;
+}

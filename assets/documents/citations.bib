@@ -1,0 +1,35 @@
+@Article{robotics12020039,
+AUTHOR = {Smith, William and Qin, Yongming and Singh, Siddharth and Burke, Hudson and Furukawa, Tomonari and Dissanayake, Gamini},
+TITLE = {A Multistage Framework for Autonomous Robotic Mapping with Targeted Metrics},
+JOURNAL = {Robotics},
+VOLUME = {12},
+YEAR = {2023},
+NUMBER = {2},
+ARTICLE-NUMBER = {39},
+URL = {https://www.mdpi.com/2218-6581/12/2/39},
+ISSN = {2218-6581},
+ABSTRACT = {High-quality maps are pertinent to performing tasks requiring precision interaction with the environment. Current challenges with creating a high-precision map come from the need for both high pose accuracy and scan accuracy, and the goal of reliable autonomous performance of the task. In this paper, we propose a multistage framework to create a high-precision map of an environment which satisfies the targeted resolution and local accuracy by an autonomous mobile robot. The proposed framework consists of three steps. Each step is intended to aid in resolving the challenges faced by conventional approaches. In order to ensure the pose estimation is performed with high accuracy, a globally accurate coarse map of the environment is created using a conventional technique such as simultaneous localization and mapping or structure from motion with bundle adjustment. The high scan accuracy is ensured by planning a path for the robot to revisit the environment while maintaining a desired distance to all occupied regions. Since the map is to be created with targeted metrics, an online path replanning and pose refinement technique is proposed to autonomously achieve the metrics without compromising the pose and scan accuracy. The proposed framework was first validated on the ability to address the current challenges associated with accuracy through parametric studies of the proposed steps. The autonomous capability of the proposed framework was been demonstrated successfully in its use for a practical mission.},
+DOI = {10.3390/robotics12020039}
+}
+
+
+@inproceedings{smith_autonomous_2022,
+	title = {Autonomous {Robotic} {Map} {Refinement} for {Targeted} {Resolution} and {Local} {Accuracy}},
+	doi = {10.1109/SSRR56537.2022.10018686},
+	booktitle = {2022 {IEEE} {International} {Symposium} on {Safety}, {Security}, and {Rescue} {Robotics} ({SSRR})},
+	author = {Smith, William and Qin, Yongming and Furukawa, Tomonari and Dissanayake, Gamini},
+	year = {2022},
+	pages = {130--137},
+        abstract = {This paper presents a multistage approach to refining the map of an environment and satisfying the targeted resolution and local accuracy by an autonomous mobile robot. The proposed approach consists of two steps. Having a globally accurate coarse map of the environment developed using a conventional technique such as SLAM or SfM with bundle adjustment, the proposed first step plans a path for the robot to revisit the environment while maintaining a desired distance to all occupied regions of interest since the resolution and the local accuracy of the map typically depends on the distance from which objects in the environment are observed. An Unoccupancy Distance Map (UDM) and a reduced-order Travelling Salesman Problem (TSP) techniques are newly proposed to solve this class of problems. In the final step, an online path replanning and map refinement technique is proposed to achieve the targeted resolution and local accuracy of the map. Parametric studies have firstly validated the effectiveness of the proposed two steps. The autonomous capability of the proposed approach has then been demonstrated successfully in its use for a practical mission.}
+}
+
+@inproceedings{smith_whole_2025,
+	title = {Whole {Body} {Planning} of {Mobile} {Manipulators} {Leveraging} {Lie} {Theory} based {Optimization}},
+	url = {https://openreview.net/forum?id=7ZRclFFHSK&noteId=7ZRclFFHSK},
+	language = {en},
+	booktitle = {{RSS} 2025 {Workshop}: {Mobile} {Manipulation}: {Emerging} {Opportunities} \& {Contemporary} {Challenges}},
+	author = {Smith, William and Singh, Siddharth and Rudy, Julia and Guan, Yuxiang},
+	month = jun,
+	year = {2025},
+        abstract = {Mobile manipulators find use in several applications in distinct setups. The current issues with mobile manipulation are the large state space provided by the mobile base and the challenge of modeling high degree of freedom systems. In this work, we propose a Lie theory and optimization based approach for whole body planning of mobile manipulators to address these issues. Existing kinematics based approaches are unable to converge to an optimized joint state due to a seemingly infinite state space provided by the unconstrained motion of the base. We propose using a Lie theory based optimization framework to find the inverse kinematic constraints by converting the kinematic model, created using screw coordinates, between its Lie group and vector representation. An optimization function is devised to solve for the desired joint states of the entire mobile manipulator while including collision check constraints. This allows the motion of the mobile base and manipulator to be planned and applied in unison. The optimization framework also allows other desired conditions to be considered without large changes to the structure of the method. The performance of the whole body state planner is validated on multiple mobile manipulators in simulation with both the holonomic and non-holonomic mobile bases.}
+}
