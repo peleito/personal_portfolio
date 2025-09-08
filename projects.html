@@ -8,119 +8,116 @@
     <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-    </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Me</a>
+            <a href="index.html#news">Latest News</a>
+            <a href="index.html#publications">Publications</a>
+            <a href="projects.html">Projects</a>
+        </div>
 
     <div class="content">
         <h1>Projects</h1>
+		<div class="row">
+			<div class="column">
+				<div class="project">
+					<h2>High Precision Multi-Stage Mapping</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/6PAufF5BjBU" title="High Precision Map Refinement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/kAIEGdcYhMU" title="Fine Mapping the Machine Room" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/bVqIXre15NE" title="Automatic Replanning for Improved Mapping Accuracy and Resolution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="706" height="526" src="https://www.youtube.com/embed/M-WaBxg_xgc" title="Pump Room High Precision 3D Scan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<img src="assets/images/FlashTalkPoster_Billy.jpg" alt="Mapping Poster">
+					<img src="assets/images/seville_presentation.jpg" alt="Presentation at SSRR2022">
+					<p>Research and developed a framework for efficient and guaranteed high precision mapping for unknown indoor environment. 
+						The proposed framework consists of three stages, starting with a 3D lidar before adding a depth camera. 
+						The first stage is to construct a globally accurate coarse map to be used for planning the optimal path, in stage two, to achieve the desired map resolution and accuracy, in stage three. 
+						Stage three required online trajectory correction of the sensor suite to ensure the desired metrics are satisfied. 
+						Then the new scan is registered to the growing coarse map based on a weighting scheme between the coarse and fine map matching scores.</p>
+				</div>
 
-        <div class="projects-container">
+				<div class="project">
+					<h2>Multi-Robot Team for Mapping and Inspection</h2>
+					<iframe src="https://www.youtube.com/embed/oqmeWKE--QU" frameborder="0" allowfullscreen></iframe>
+					<p>Worked with a group of other graduate researchers to develop a team of robots (UGV & UAVs) for mapping and inspection of large areas. 
+						Developed mobile-manipulator pipelines with remote monitoring and feedback.
+						Implemented RTAB-Map based SLAM pipelines and graph-based motion planners for navigation. 
+					</p>
+				</div>
 
-            <!-- High Precision Multi-Stage Mapping -->
-            <div class="project">
-                <h2>High Precision Multi-Stage Mapping</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/6PAufF5BjBU" title="High Precision Map Refinement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/kAIEGdcYhMU" title="Fine Mapping the Machine Room" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/bVqIXre15NE" title="Automatic Replanning for Improved Mapping Accuracy and Resolution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="706" height="526" src="https://www.youtube.com/embed/M-WaBxg_xgc" title="Pump Room High Precision 3D Scan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <img src="assets/images/FlashTalkPoster_Billy.jpg" alt="Mapping Poster">
-                <img src="assets/images/seville_presentation.jpg" alt="Presentation at SSRR2022">
-                <p>Research and developed a framework for efficient and guaranteed high precision mapping for unknown indoor environment. 
-                    The proposed framework consists of three stages, starting with a 3D lidar before adding a depth camera. 
-                    The first stage is to construct a globally accurate coarse map to be used for planning the optimal path, in stage two, to achieve the desired map resolution and accuracy, in stage three. 
-                    Stage three required online trajectory correction of the sensor suite to ensure the desired metrics are satisfied. 
-                    Then the new scan is registered to the growing coarse map based on a weighting scheme between the coarse and fine map matching scores.</p>
-            </div>
+				<div class="project">
+					<h2>Visual Servoing for Basic Manipulation Tasks</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/foufFKuS3Mo" title="Button Localization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/aVAFU7ErHMo" title="Panel Detection and Interaction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Developed systems to perform basic manipulation tasks with a human in the loop supervisor for maintanance. 
+						Main goal was to identify and localize emergency buttons in an environment. 
+						The robot would then travel to the location and identify the available buttons for a remote user to select before executing the motion to achieve the task.</p>
+				</div>
+			
+				<div class="project">
+					<h2>Ball Tracking and Chasing</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/QoF27OGNP1I" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Designed and implemented a balling tracking algorithm for a ROSbot 2 in ECE 6501 Automous Mobile Robots (UVA). 
+						The ball would be rolled in front of the robot with initial detection using blog detection from the depth camera and tracking using an EKF. 
+						The robot would then chase the ball and when it loses sight of the ball the robot would have to travel to the ball's estimated position 5 seconds in the future to regain sight.</p>
+				</div>
 
-            <!-- Whole Body Planner for Mobile Manipulation -->
-            <div class="project">
-                <h2>Whole Body Planner for Mobile Manipulation</h2>
-                <img src="assets/images/RSS2025MoMa_Poster.jpg" alt="Graph Planner">
-                <img src="assets/images/california_poster.jpg" alt="Poster Presentation">
-                <p>Researched and developed a whole body planner for mobile manipulators based on Lie theory kinematic constraints with a customizable optmization function for smoothness.
-                    Presented at Mobile Manipulation: Emerging Opportunities and Contemporary Challenges Workshop at RSS 2025 in Los Angeles, California.
-                </p>
-            </div>
+				<div class="project">
+					<h2>Robot Building</h2>
+					<img src="assets/images/trex.jpg" alt="Mobile Manipulator">
+					<iframe width="364" height="646" src="https://www.youtube.com/embed/wLtDlIhtOD4" title="Testing TREX for the First Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Created a large UGV with autonomous capabilities and an industrial manipulator. 
+						Construction included a replaceable wiring harness to allow for repair of individual components. 
+						Software included mapping and basic manipulation tasks with the ability to further perform specilized tasks.</p>
+				</div>
+			
+			</div>
+			
+			<div class="column">
+				<div class="project">
+					<h2>Whole Body Planner for Mobile Manipulation</h2>
+					<img src="assets/images/RSS2025MoMa_Poster.jpg" alt="Graph Planner">
+					<img src="assets/images/california_poster.jpg" alt="Poster Presentation">
+					<p>Researched and developed a whole body planner for mobile manipulators based on Lie theory kinematic constraints with a customizable optmization function for smoothness.
+						Presented at Mobile Manipulation: Emerging Opportunities and Contemporary Challenges Workshop at RSS 2025 in Los Angeles, California.
+					</p>
+				</div>
+				
+				<div class="project">
+					<h2>Additive Manufacturing with a Mobile Manipulator</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/e8DCa7HFuV0" title="Additive Manufacturing with a Mobile Manipulator (Sine Wall)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/1ha95iOWHL0" title="Additive Manufacturing with a Mobile Manipulator (Square Wall)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Worked with another graduate research to collaborate with an architecture research group to prototype mobile manipulator for additive manufacturing. 
+						The clay medium required precise coordination of the mobile base and manipulator to ensure the structure was built appropriately without knocking over the structure. 
+						The prototype was demonstrated successfuly with a >15 minute printing task that maintained the desired shape with minimal drift.</p>
+				</div>
 
-            <!-- Additive Manufacturing with a Mobile Manipulator -->
-            <div class="project">
-                <h2>Additive Manufacturing with a Mobile Manipulator</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/e8DCa7HFuV0" title="Additive Manufacturing with a Mobile Manipulator (Sine Wall)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/1ha95iOWHL0" title="Additive Manufacturing with a Mobile Manipulator (Square Wall)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Worked with another graduate research to collaborate with an architecture research group to prototype mobile manipulator for additive manufacturing. 
-                    The clay medium required precise coordination of the mobile base and manipulator to ensure the structure was built appropriately without knocking over the structure. 
-                    The prototype was demonstrated successfuly with a >15 minute printing task that maintained the desired shape with minimal drift.</p>
-            </div>
+				<div class="project">
+					<h2>Indoor Mapping for Robot Navigation and Collaboration</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/HMU_zMiPb5s" title="RTABMAP with Ouster Lidar and Intel Realsense" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/w3rfX9QggQQ" title="RTABMAP with 2 Intel Realsense L515" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Implemented RTAB-Map for fusing Lidar and depth cameras to empircally determine the best sensor suite for robot navigation and collaboration.</p>
+				</div>
+			
+				<div class="project">
+					<h2>Driving Simulator</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/qyVbX3ARDCk" title="Using the Driving Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/hpvrqK1Vcng" title="Onboard the Driving Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Mentored undergraduate research assistants creating a full motion driving simulator by reviewing proposed designs and providing technical guidance on dynamic controls and communication protocols.</p>
+				</div>
 
-            <!-- Multi-Robot Team for Mapping and Inspection -->
-            <div class="project">
-                <h2>Multi-Robot Team for Mapping and Inspection</h2>
-                <iframe src="https://www.youtube.com/embed/oqmeWKE--QU" frameborder="0" allowfullscreen></iframe>
-                <p>Worked with a group of other graduate researchers to develop a team of robots (UGV & UAVs) for mapping and inspection of large areas. 
-                    Developed mobile-manipulator pipelines with remote monitoring and feedback.
-                    Implemented RTAB-Map based SLAM pipelines and graph-based motion planners for navigation. 
-                </p>
-            </div>
-
-            <!-- Visual Servoing -->
-            <div class="project">
-                <h2>Visual Servoing for Basic Manipulation Tasks</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/foufFKuS3Mo" title="Button Localization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/aVAFU7ErHMo" title="Panel Detection and Interaction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Developed systems to perform basic manipulation tasks with a human in the loop supervisor for maintanance. 
-                    Main goal was to identify and localize emergency buttons in an environment. 
-                    The robot would then travel to the location and identify the available buttons for a remote user to select before executing the motion to achieve the task.</p>
-            </div>
-
-            <!-- Indoor Mapping for Navigation -->
-            <div class="project">
-                <h2>Indoor Mapping for Robot Navigation and Collaboration</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/HMU_zMiPb5s" title="RTABMAP with Ouster Lidar and Intel Realsense" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/w3rfX9QggQQ" title="RTABMAP with 2 Intel Realsense L515" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Implemented RTAB-Map for fusing Lidar and depth cameras to empircally determine the best sensor suite for robot navigation and collaboration.</p>
-            </div>
-
-            <!-- Ball Tracking and Chasing -->
-            <div class="project">
-                <h2>Ball Tracking and Chasing</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/QoF27OGNP1I" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Designed and implemented a balling tracking algorithm for a ROSbot 2 in ECE 6501 Automous Mobile Robots (UVA). 
-                    The ball would be rolled in front of the robot with initial detection using blog detection from the depth camera and tracking using an EKF. 
-                    The robot would then chase the ball and when it loses sight of the ball the robot would have to travel to the ball's estimated position 5 seconds in the future to regain sight.</p>
-            </div>
-
-            <!-- Driving Simulator -->
-            <div class="project">
-                <h2>Driving Simulator</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/qyVbX3ARDCk" title="Using the Driving Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/hpvrqK1Vcng" title="Onboard the Driving Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Mentored undergraduate research assistants creating a full motion driving simulator by reviewing proposed designs and providing technical guidance on dynamic controls and communication protocols.</p>
-            </div>
-
-            <!-- Robot Building -->
-            <div class="project">
-                <h2>Robot Building</h2>
-                <img src="assets/images/trex.jpg" alt="Mobile Manipulator">
-                <iframe width="364" height="646" src="https://www.youtube.com/embed/wLtDlIhtOD4" title="Testing TREX for the First Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Created a large UGV with autonomous capabilities and an industrial manipulator. 
-                    Construction included a replaceable wiring harness to allow for repair of individual components. 
-                    Software included mapping and basic manipulation tasks with the ability to further perform specilized tasks.</p>
-            </div>
-
-            <!-- Autonomous Campus Vehicles -->
-            <div class="project">
-                <h2>Autonomous Campus Vehicles</h2>
-                <iframe width="935" height="526" src="https://www.youtube.com/embed/KZkYP_FjwHw" title="Autonomous Campus Vehicles 1 Year Progress" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="658" height="526" src="https://www.youtube.com/embed/MQee1fz582w" title="Mapping Charlottesville with ZED2 and Ouster 3D Lidar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>Worked on a team with five other undergraduate students to design and build a pair of autonomous capable golf carts for our capstone project (UVA). 
-                    The golf carts were modified to provided drive by wire controls and sensors were added to map the environment in an GPS limited environment. 
-                    The golf carts were able to be controlled via a wireless joystick while creating a map by fusing a lidar and two stereo cameras for future localization.
-                    As a graduate student, caravanning capabilities were added so that a person could drive the first golf cart and the second golf cart could follow based on visual servoing and shared pose beliefs.</p>
-            </div>
-    
-        </div>
+				<div class="project">
+					<h2>Autonomous Campus Vehicles</h2>
+					<iframe width="935" height="526" src="https://www.youtube.com/embed/KZkYP_FjwHw" title="Autonomous Campus Vehicles 1 Year Progress" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<iframe width="658" height="526" src="https://www.youtube.com/embed/MQee1fz582w" title="Mapping Charlottesville with ZED2 and Ouster 3D Lidar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>Worked on a team with five other undergraduate students to design and build a pair of autonomous capable golf carts for our capstone project (UVA). 
+						The golf carts were modified to provided drive by wire controls and sensors were added to map the environment in an GPS limited environment. 
+						The golf carts were able to be controlled via a wireless joystick while creating a map by fusing a lidar and two stereo cameras for future localization.
+						As a graduate student, caravanning capabilities were added so that a person could drive the first golf cart and the second golf cart could follow based on visual servoing and shared pose beliefs.</p>
+				</div>
+			
+			</div>
+		</div>
+		
     </div>
 </body>
 </html>
