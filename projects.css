@@ -11,7 +11,7 @@
 }
 
 .project {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
     background: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
@@ -20,8 +20,13 @@
 }
 
 /* Jagged Layout */
-.project:nth-child(1) { grid-row: span 2; } 
-.project:nth-child(3) { grid-row: span 2; } 
+.project:nth-child(1) {
+    grid-row: span 2;
+}
+
+.project:nth-child(3) {
+    grid-row: span 2;
+}
 
 .project h2 {
     font-size: 1.3em;
@@ -59,20 +64,21 @@
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Responsive Stacking */
@@ -80,6 +86,7 @@
     .projects-container {
         grid-template-columns: 1fr;
     }
+
     .project {
         grid-row: auto;
     }
