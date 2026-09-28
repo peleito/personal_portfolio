@@ -82,12 +82,14 @@ img {
 } */
 
 .name-and-description {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;       /* Center content horizontally within white space */
-  justify-content: center;   /* Center content vertically if needed */
-  text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally within white space */
+    justify-content: center;
+    /* Center content vertically if needed */
+    text-align: center;
 }
 
 .name-and-description h1 {
@@ -106,9 +108,12 @@ img {
 
 .links {
     display: flex;
-    justify-content: center;         /* Center links horizontally */
-    gap: 15px;                       /* Space between links */
-    margin-top: 20px;                 /* Add space above the links */
+    justify-content: center;
+    /* Center links horizontally */
+    gap: 15px;
+    /* Space between links */
+    margin-top: 20px;
+    /* Add space above the links */
 }
 
 .links a {
@@ -148,11 +153,13 @@ img {
     padding: 5;
     margin: 0 auto;
     list-style-position: inside;
-    max-width: 1000px; /* Match width with other sections */
+    max-width: 1000px;
+    /* Match width with other sections */
 }
 
 .news-section ul li {
-    margin-bottom: 12px; /* Adjust this value as needed */
+    margin-bottom: 12px;
+    /* Adjust this value as needed */
 }
 
 /* Publications table */
@@ -161,7 +168,8 @@ img {
     width: 100%;
     max-width: 900px;
     border-collapse: collapse;
-    margin: 0 auto; /* Center the table if there’s extra space */
+    margin: 0 auto;
+    /* Center the table if there’s extra space */
 }
 
 .publications td {
@@ -233,8 +241,10 @@ img {
 
 /* Navigation bar styling */
 .nav {
-    display: flex;             /* Use Flexbox for row layout */
-    justify-content: center;   /* Center align links horizontally */
+    display: flex;
+    /* Use Flexbox for row layout */
+    justify-content: center;
+    /* Center align links horizontally */
     background-color: white;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -249,16 +259,19 @@ img {
     color: black;
     font-size: 1.5em;
     font-weight: bold;
-    margin-right: 30px;         /* Space between links */
+    margin-right: 30px;
+    /* Space between links */
 }
 
 .nav a:hover {
-    color: #007bff;             /* Blue hover effect */
+    color: #007bff;
+    /* Blue hover effect */
 }
 
 /* Optional: Adding space below the navigation bar */
 body {
-    padding-top: 60px;           /* Prevent content from hiding behind the nav bar */
+    padding-top: 60px;
+    /* Prevent content from hiding behind the nav bar */
 }
 
 
@@ -267,8 +280,10 @@ body {
     max-width: 900px;
     border: none;
     height: 1px;
-    background-color: #000000; /* Light grey line */
-    margin: 40px 0; /* Adjust spacing */
+    background-color: #000000;
+    /* Light grey line */
+    margin: 40px 0;
+    /* Adjust spacing */
 }
 
 .sub-section-divider {
@@ -276,8 +291,10 @@ body {
     max-width: 900px;
     border: none;
     height: 1px;
-    background-color: #030000; /* Light grey line */
-    margin: 10px 0; /* Adjust spacing */
+    background-color: #030000;
+    /* Light grey line */
+    margin: 10px 0;
+    /* Adjust spacing */
 }
 
 .publications iframe {
